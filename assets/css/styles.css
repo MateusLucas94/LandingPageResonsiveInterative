@@ -258,7 +258,7 @@ img {
 
 
 /*==================== HOME ====================*/
-/* feito as classes da HOME vamos fazer as classes dos botões */
+/* !feito as classes da HOME vamos fazer as classes dos botões */
 .home__container{
   gap: 1rem;
 }
@@ -340,12 +340,12 @@ img {
   font-size: 1.25rem;
 }
 
-
+/*terminando de fazer o css dos botões vou fazer o html da parte*/
 /*==================== BUTTONS ====================*/
 .button{
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: #FFF;
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
@@ -356,7 +356,7 @@ img {
 }
 
 .button__icon{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: var(--mb-0-5);
   transition: .3s;
 }
