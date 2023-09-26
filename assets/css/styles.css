@@ -166,7 +166,7 @@ img {
   background-color: var(--body-color);
 }
 
-/* feito o header do index.html, agora farei o NAV no css e colocarei as classes na lista*/
+/* !feito o header do index.html, agora farei o NAV no css e colocarei as classes na lista*/
 /*==================== NAV ====================*/
 .nav{
   max-width: 968px;
