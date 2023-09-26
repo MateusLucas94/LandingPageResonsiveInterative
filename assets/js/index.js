@@ -14,8 +14,8 @@ if(navToggle){
 }
 
 /*======= MENU ESCONDIDO =====*/
-/* depois de fazer a validação para abrir o menu, farei a validação para esconder ele */
-/* Valida se a constante existe */
+/* !depois de fazer a validação para abrir o menu, farei a validação para esconder ele */
+/* !Valida se a constante existe */
 if(navClose){
     navClose.addEventListener('click', ()=>{
         navMenu.classList.remove('show-menu')
@@ -23,9 +23,9 @@ if(navClose){
 }
 
 /*====================== REMOVER MENU CELULAR ====================*/
-/*  após fazer a validação para esconder o menu, faremos com que cada item do menu vá direto para 
+/*  !após fazer a validação para esconder o menu, faremos com que cada item do menu vá direto para 
     sua respectiva área da página */
-//  após automatizar os botões do menu, voltarei para o index.html fazer a parte MAIN do projeto!
+//  !após automatizar os botões do menu, voltarei para o index.html fazer a parte MAIN do projeto!
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
