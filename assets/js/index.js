@@ -5,8 +5,8 @@ const navMenu = document.getElementById('nav-menu'),
       navClose = document.getElementById('nav-close')
 
 /*======= MOSTRAR MENU =====*/
-/* após pegar os elementos menu, toggle e close faremos a validação para mostrar o menu */
-/* Valida se a constante existe */
+/* !após pegar os elementos menu, toggle e close faremos a validação para mostrar o menu */
+/* !Valida se a constante existe */
 if(navToggle){
     navToggle.addEventListener('click', ()=> {
         navMenu.classList.add('show-menu')
