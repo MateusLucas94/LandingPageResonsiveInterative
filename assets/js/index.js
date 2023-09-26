@@ -1,5 +1,5 @@
 /*====================== MENU MOSTRAR E ESCONDER ====================*/
-/* começaremos pegando o id dos elementos menu, toggle e close */
+/* !começaremos pegando o id dos elementos menu, toggle e close */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
