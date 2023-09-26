@@ -477,50 +477,50 @@ img {
 }
 
 .skills__html{
-  width: 100%;
+  width: 90%;
 }
 
 .skills__css{
-  width: 90%;
+  width: 40%;
 }
 
 .skills__js{
-  width: 80%;
+  width: 50%;
 }
 
 .skills__react{
+  width: 40%;
+}
+
+
+.skills__mysql{
   width: 70%;
 }
 
-
-.skills__php{
-  width: 100%;
-}
-
 .skills__node{
-  width: 90%;
+  width: 70%;
 }
 
-.skills__firebase{
-  width: 80%;
+.skills__docker{
+  width: 40%;
 }
 
-.skills__python{
+.skills__Typescript{
   width: 70%;
 }
 
 
 
 .skills__figma{
-  width: 100%;
+  width: 50%;
 }
 
-.skills__sketch{
-  width: 90%;
+.skills__cssgrid{
+  width: 60%;
 }
 
 .skills__pothoshop{
-  width: 80%;
+  width: 50%;
 }
 
 .skills__close .skills__list{
