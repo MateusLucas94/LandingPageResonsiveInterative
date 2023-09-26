@@ -209,6 +209,8 @@ img {
   }
 }
 
+
+/* aqui faz com que os botões do menu home/about/ skills... ficarem alinhados em 2 colunas de 3 itens*/
 .nav__list{
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -234,7 +236,7 @@ img {
 .nav__close{
   position: absolute;
   right: 1.3rem;
-  bottom: 1.5rem;
+  bottom: .5rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--first-color)
