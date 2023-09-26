@@ -11,11 +11,11 @@
     /*========== Colors ==========*/
     /* Change favorite color */
     /* Depois de colocar a altura do header fazer a seleção e cores*/
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 237; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 95%, 27%);
-    --first-color-second: hsl(var(--hue-color), 95%, 27%);
+    --first-color: hsl(var(--hue-color), 70%, 50%);
+    --first-color-second: hsl(var(--hue-color), 70%, 50%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -23,7 +23,7 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
+    --container-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
