@@ -650,10 +650,6 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 }
 
-.services__content:hover{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
-}
-
 .services__icon{
   display: block;
   font-size: 1.5rem;
@@ -688,7 +684,7 @@ img {
   justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
-  opacity: 0%;
+  opacity: 0;
   visibility: hidden;
   transition: .3s;
 }
@@ -729,10 +725,12 @@ img {
 }
 
 
-
-
-
 /* Active Modal */
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 /*==================== PORTFOLIO ====================*/
