@@ -38,7 +38,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*====================== HABILIDADES DE ACORDEÃO ====================*/
-const skillsContent = document.getElementesByClassName('skills__content'),
+const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
@@ -59,24 +59,32 @@ skillsHeader.forEach((el) =>{
 
 /*====================== GUIAS DE QUALIFICAÇÃO ====================*/
 
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll('.qualification__button'); // Selecionar todos os botões de guia
+const tabContents = document.querySelectorAll('.qualification__content'); // Selecionar todos os conteúdos de guia
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click',() =>{
-        const target = document.querySelector(tab.dataset.target)
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-target'); // Obter o valor do atributo data-target
+        console.log(target);
 
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
+        // Remover a classe 'qualification__active' de todos os botões de guia
+        tabs.forEach(t => {
+            t.classList.remove('qualification__active');
+        });
 
-        tabs.forEach(tab =>{
-            tab.classList.remove('qualification__active')
-        })
-        tab.classList.add('qualification__active')
-    })
-})
+        // Adicionar a classe 'qualification__active' apenas ao botão de guia clicado
+        tab.classList.add('qualification__active');
+        console.log(tab);
+
+        // Esconder todos os conteúdos de guia
+        tabContents.forEach(tabContent => {
+            tabContent.style.display = 'none';
+        });
+
+        // Exibir o conteúdo de guia correspondente ao botão de guia clicado
+        document.querySelector(target).style.display = 'block';
+    });
+});
 
 
 
