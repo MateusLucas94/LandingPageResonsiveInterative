@@ -451,6 +451,10 @@ img {
 
 /* !depois de terminar skills no html vou fazer o css de skills*/
 /*==================== SKILLS ====================*/
+.skills {
+  margin: 0 4rem 0 4rem;
+}
+
 .skills__container {
   row-gap: 0;
 }
@@ -576,7 +580,9 @@ img {
 }
 
 /*==================== QUALIFICATION ====================*/
-
+.qualification {
+  margin: 0 4rem 0 4rem;
+}
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -649,6 +655,9 @@ img {
 }
 
 /*==================== SERVICES ====================*/
+.services {
+  margin: 0 4rem 0 4rem;
+}
 .services__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -748,6 +757,9 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio {
+  margin: 0 4rem 0 4rem;
+}
 .´prtifolio__container {
   overflow: initial;
 }
@@ -837,6 +849,9 @@ img {
 }
 
 /*==================== TESTIMONIAL ====================*/
+.testimonial {
+  margin: 0 4rem 0 4rem;
+}
 .testimonial__data,
 .testimonial__header {
   display: flex;
@@ -877,13 +892,19 @@ img {
 }
 
 /*==================== CONTACT ME ====================*/
+.contact {
+  margin: 0 4rem 0 4rem;
+}
+
 .contact__container {
   row-gap: 3rem;
 }
 
 .contact__information {
   display: flex;
+  flex-direction: column;
   margin-bottom: var(--mb-2);
+  justify-content: space-around;
 }
 
 .contact__icon {
