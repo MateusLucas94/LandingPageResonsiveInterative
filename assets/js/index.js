@@ -172,9 +172,55 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 /*====================== MUDAR CABEÇALHO DE FUNDO ====================*/ 
-
+function scrollHeader() {
+    const nav = document.getElementById("header");
+    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+    if (this.scrollY >= 80) nav.classList.add("scroll-header");
+    else nav.classList.remove("scroll-header");
+  }
+  window.addEventListener("scroll", scrollHeader);
 
 /*====================== MOSTRAR ROLAR PARA CIMA ====================*/ 
-
+function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+  }
+  window.addEventListener("scroll", scrollUp);
 
 /*====================== TEMA DA LUZ ESCURA ====================*/ 
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
+
+// Tópico previamente selecionado (se o usuário tiver selecionado)
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// Obtemos o tema atual que a interface possui validando a classe dark-theme
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "escuro" : "claro";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+// Validamos se o usuário escolheu anteriormente um tópico
+if (selectedTheme) {
+  // Se a validação for cumprida, perguntamos qual foi o problema para saber se ativamos ou desativamos o tema escuro
+  document.body.classList[selectedTheme === "escuro" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+// Ativar/desativar o tema manualmente com o botão
+themeButton.addEventListener("click", () => {
+  // Adicionar ou remover o tema escuro/ícone
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // Salvamos o tema e o ícone atual que o usuário escolheu
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
