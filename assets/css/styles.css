@@ -1031,6 +1031,81 @@ img {
 }
 
 /*==================== FOOTER ====================*/
+.footer {
+  row-gap: 3.5rem;
+}
+
+.footer__container {
+  row-gap: 3.5rem;
+}
+
+.footer__container__div{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente os elementos dentro do container */
+  height: 100%;
+}
+
+.footer__div {
+  flex: 1; /* Faz com que ocupe todo o espaço disponível horizontalmente */
+}
+
+.footer__bg {
+  /* background-color: var(--first-color-second); */
+  background-image: url(/assets/img/19691.jpg);
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+  background-repeat: no-repeat;
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__socials{
+  text-align: center;
+}
+
+
+.footer__social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: #fff;
+}
+
 
 /*========== SCROLL UP ==========*/
 
