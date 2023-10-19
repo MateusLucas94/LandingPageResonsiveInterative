@@ -485,16 +485,8 @@ img {
 
 /* !depois de terminar skills no html vou fazer o css de skills*/
 /*==================== SKILLS ====================*/
-.skills {
-  margin: 0 4rem 0 4rem;
-}
-
 .skills__container {
   row-gap: 0;
-}
-
-.skills__content {
-  margin-bottom: 2%;
 }
 
 .skills__header {
@@ -523,10 +515,6 @@ img {
   color: var(--text-color-light);
 }
 
-.skillsSubtitle {
-  margin-bottom: 5%;
-}
-
 .skills__arrow {
   margin-left: auto;
   transition: 0.4s;
@@ -535,7 +523,6 @@ img {
 .skills__list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
-  margin-bottom: 2%;
 }
 
 .skills__titles {
@@ -620,6 +607,12 @@ img {
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+}
+.skills__content.skills__close .skills__list {
+  display: none;
+}
+.skills__content.skills__open .skills__arrow {
+  transform: rotate(180deg);
 }
 
 /*==================== QUALIFICATION ====================*/

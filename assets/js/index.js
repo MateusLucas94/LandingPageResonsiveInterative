@@ -38,23 +38,42 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*====================== HABILIDADES DE ACORDEÃO ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader = document.querySelectorAll('.skills__header')
+const skillsHeaders = document.querySelectorAll(".skills__header");
 
-function toggleSkills(){
-    let itemClass = this.parentNode.className
+skillsHeaders.forEach((header) => {
+  header.addEventListener("click", function () {
+    const content = this.nextElementSibling; // Encontre o conteúdo a seguir
+    const parent = this.parentNode.className;
+    if (parent === "skills__content skills__close") {
+      // Se o conteúdo estiver aberto, feche-o
+      content.style.height = null;
+      this.querySelector(".skills__arrow").style.transform = "rotate(180deg)";
+    } else {
+      // Se o conteúdo estiver fechado, abra-o
+      content.style.height = content.scrollHeight + "px";
+      this.querySelector(".skills__arrow").style.transform = "rotate(0deg)";
+    }
+  });
+});
 
-    for(i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-    if(itemClass === 'skill-content skills__close'){
-        this.parentNode.className = 'skill-content skills_open'
-    }
+const skillsContent = document.getElementsByClassName("skills__content"),
+  skillsHeader = document.querySelectorAll(".skills__header");
+
+function toggleSkills() {
+  let itemClass = this.parentNode.className;
+
+  for (let i = 0; i < skillsContent.length; i++) {
+    skillsContent[i].className = "skills__content skills__close";
+  }
+  if (itemClass === "skills__content skills__close") {
+    this.parentNode.className = "skills__content skills__open";
+  }
 }
 
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
-})
+skillsHeader.forEach((el) => {
+  el.addEventListener("click", toggleSkills);
+});
+
 
 
 /*====================== GUIAS DE QUALIFICAÇÃO ====================*/
